@@ -19,15 +19,21 @@
         }
     </style>
 </head>
-<body>
-    <script src="./libs/fas.js"></script>
-	<script type="module">
-        import { App } from './app.js';
-        
-		document.addEventListener("DOMContentLoaded", function(){
-			const app = new App();
-			window.app = app;
-		});
-	</script>
+<script src="./libs/fas.js"></script>
+<script type="module">
+  import { App } from './app.js';
+
+  document.addEventListener("DOMContentLoaded", function(){
+    const app = new App();
+    window.app = app;
+  });
+</script>
+
+<!-- 🔶 Floating Welcome Text -->
+<a-entity position="0 2 -5">
+  <a-text value="Welcome to MMU Virtual Tour!" color="orange" align="center" width="6"></a-text>
+</a-entity>
+
 </body>
 </html>
+
